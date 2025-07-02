@@ -1,38 +1,121 @@
-
-#📄 index.html:*
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Likhi Love</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likhi Love</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: url('https://media.tenor.com/gvW3Y8akZyQAAAAC/happy-birthday.gif') center/cover no-repeat fixed;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    h1 {
+      background-color: rgba(255, 111, 97, 0.9);
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    p {
+      margin: 10px 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 6px;
+      border-radius: 5px;
+    }
+
+    .accordion {
+      background-color: rgba(255, 111, 97, 0.9);
+      color: white;
+      cursor: pointer;
+      padding: 14px;
+      width: 80%;
+      border: none;
+      text-align: left;
+      outline: none;
+      margin: 10px auto;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .accordion.active, .accordion:hover {
+      background-color: rgba(255, 61, 46, 0.9);
+    }
+
+    .panel {
+width: 80%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 15px;
+      border-radius: 0 0 4px 4px;
+      color: #000;
+    }
+
+    .panel p {
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="banner">Likhi Love</div>
-    <div class="content">
-        <p>Hey myy lovee myy gurlll 💖</p>
-        <p>Happy Birthday on 2nd September! 🎉</p>
-        <p>You're the reason my world is so beautiful. 🌍</p>
-        <p>I promise to be with you forever. 🤞</p>
-    </div>
-    <div class="faq">
-        <h2>Q&A Section</h2>
-        <div class="faq-item">
-            <button class="question">What's my favorite thing about you?</button>
-            <div class="answer">Everything! Your smile, your heart, your soul. 💕</div>
-        </div>
-        <div class="faq-item">
-            <button class="question">Where do I see us in the future?</button>
-            <div class="answer">Together, building our dreams side by side. 🏡</div>
-</div>
-        <div class="faq-item">
-            <button class="question">Do I love you?</button>
-            <div class="answer">More than words can express. Infinity times infinity. ♾️</div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <script>
+    window.onload = () => {
+      alert("🎉🎊🎉🎊🎉🎊🎉yooooo my Pasandita ! 🎊🎉🎊🎉🎊");
+    };
+  </script>
+
+  <h1>Likhi My Love</h1>
+  <p>Hey maiii lovee myy Sweetheart my bee 💖</p>
+  <p> I'm So Happyyyyy for your birthday... Happy Birthday Likhiii Pakhi (2nd September!) 🎂</p>
+  <p>You’re the reason my world is so beautiful. 🌍</p>
+  <p>On this Day,I promise to be with your forever. 🤞</p>
+
+  <h2 style="background: rgba(0,0,0,0.4); padding: 10px;">Q&A Section</h2>
+
+  <button class="accordion">What's my favorite thing about you?</button>
+  <div class="panel">
+    <p>Your smile and the way you care for me,My Anger 🥹</p>
+  </div>
+
+  <button class="accordion">Where do I see us in the future?</button>
+  <div class="panel">
+    <p>Together, happy, and Personal life partner. </p>
+  </div>
+
+  <button class="accordion">Do I love you?</button>
+  <div class="panel">
+    <p>Ofc!!! All my heart is yourr my guall. Babyyy Promise me you will be mine? I'm Ready tho❤️</p>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll(".accordion");
+
+    questions.forEach((question) => {
+question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+          question.classList.remove("active");
+        } else {
+          document.querySelectorAll(".panel").forEach((panel) => {
+            panel.style.maxHeight = null;
+            panel.previousElementSibling.classList.remove("active");
+          });
+
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          question.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
 ```
