@@ -1,7 +1,7 @@
 ```css
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('https://github.com/fahimrahman143/Likhi-Love/blob/main/bg.jpg?raw=true');
+  background-image: url('https://i.imgur.com/5dXLQmj.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,37 +11,30 @@ body {
 }
 
 .banner {
-  background-color: rgba(255, 111, 97, 0.8); /* slightly transparent coral */
+  background-color: #ff6f61;
   color: white;
   text-align: center;
   padding: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  border-radius: 8px;
-  margin: 20px;
 }
 
 .content {
   padding: 2rem;
   text-align: center;
   font-size: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.7); /* white transparent */
-  border-radius: 10px;
-  margin: 20px;
+  background-color: rgba(128, 128, 128, 0.6); /* semi-transparent gray behind text */
+  border-radius: 8px;
+  margin: 0 1rem;
 }
 
 .faq {
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  margin: 20px;
 }
 
 .faq h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: bold;
-  color: #444;
 }
 
 .faq-item {
@@ -56,7 +49,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-text-align: left;
+  text-align: left;
   border-radius: 5px;
 }
 
@@ -68,4 +61,4 @@ text-align: left;
   border-radius: 0 5px 5px 5px;
   margin-top: 0.3rem;
 }
-```
+``
