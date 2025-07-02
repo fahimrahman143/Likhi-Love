@@ -1,64 +1,61 @@
-#🎨 style.css:*
+
 ```css
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('https://github.com/fahimrahman143/Likhi-Love/blob/main/bg.jpg?raw=true');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-```css
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    margin: 0;
-    padding: 0;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 .banner {
-    background-color: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    font-size: 2.5rem;
-    font-weight: bold;
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .content {
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .faq {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .faq h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .faq-item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .question {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: left;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
 
 .answer {
-    display: none;
-    padding: 1rem;
-    background-color: #ffe5d9;
-    border-left: 5px solid #ff6f61;
+  display: none;
+  padding: 1rem;
+  background-color: #ffe5d9;
+  border-left: 5px solid #ff6f61;
 }
 ```
+
+Eta pura copy kore `style.css` file e boshao, then GitHub e update diye browser e reload korle background image o baki styling thik moto asbe.
