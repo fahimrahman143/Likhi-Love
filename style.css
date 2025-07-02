@@ -1,4 +1,11 @@
 #🎨 style.css:*
+```css
+body {
+  background-image: url('https://github.com/fahimrahman143/Likhi-Love/blob/main/bg.jpg?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 ```css
 body {
