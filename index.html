@@ -65,22 +65,26 @@ width: 80%;
   </style>
 </head>
   ```html
-<script>
-  const emojis = ['🎂', '🎉', '🥳', '🍰']; // cake celebration emojis
-
-  function createEmoji() {
-    const emoji = document.createElement('div');
-    emoji.classList.add('emoji');
-    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-    emoji.style.left = Math.random() * 100 + 'vw';
-    emoji.style.fontSize = (Math.random() * 20 + 24) + 'px';
-    document.body.appendChild(emoji);
-    setTimeout(() => emoji.remove(), 5000);
-  }
-
-  setInterval(createEmoji, 250); // emoji every 0.25s
-</script>
-```
+‎<script>
+‎  const emojis = ['🎂', '🎉', '🥳', '🍰']; // celebratory emojis
+‎
+‎  function dropEmoji() {
+‎    const emoji = document.createElement('div');
+‎    emoji.className = 'emoji';
+‎    emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+‎    emoji.style.left = Math.random() * 100 + 'vw';
+‎    emoji.style.fontSize = Math.random() * 20 + 24 + 'px';
+‎    document.body.appendChild(emoji);
+‎
+‎    setTimeout(() => {
+‎      emoji.remove();
+‎    }, 3000);
+‎  }
+‎
+‎  // Repeat every 200ms for rain effect
+‎  setInterval(dropEmoji, 200);
+‎</script>
+‎```
 <body>
   <script>
     window.onload = () => {
