@@ -64,6 +64,17 @@ width: 80%;
     }
   </style>
 </head>
+  ```html
+<script>
+  const emojis = ['🎂', '🎉', '🎊', '🍰', '🥳'];
+  for (let i = 0; i < 25; i++) {
+    const el = document.createElement('div');
+    el.className = 'emoji-drop';
+    el.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    el.style.setProperty('--left', Math.random() * 100 + 'vw');
+    document.body.appendChild(el);
+  }
+</script>
 <body>
   <script>
     window.onload = () => {
